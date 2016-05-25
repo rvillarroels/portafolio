@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objetos</title>
+	<script type="text/javascript">
+
+	
+	//Clase : Objeto maestro, del que se derivan otros objetos
+	//Clase: definicion del objeto
+	var Mascota = function (n, v)
+	{
+		this.nombre= n;
+		this.voz = v;
+	}
+		Mascota.prototype.hablar = function ()
+		{
+			alert(this.voz);
+		}
+	var perro = new Mascota ("Roco", "Guau");
+	var gato = new Mascota ("Misigu", "Miau");
+	perro.hablar();
+	gato.hablar();
+	</script>
+</head>
+<body>
+<h1>Perros y Gatos</h1>
+</body>
+</html>
